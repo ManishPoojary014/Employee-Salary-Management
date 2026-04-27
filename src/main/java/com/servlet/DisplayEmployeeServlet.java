@@ -39,7 +39,7 @@ public class DisplayEmployeeServlet extends HttpServlet {
                 out.print("<p><b>Name:</b> " + e.getEmpName() + "</p>");
                 out.print("<p><b>Joined:</b> " + e.getDoj() + "</p>");
                 out.print("<p><b>Gender:</b> " + e.getGender() + "</p>");
-                out.print("<p><b>Salary:</b> ₹" + e.getBsalary() + "</p>");
+                out.print("<p><b>Salary:</b> &#8377; " + e.getBsalary() + "</p>");
                 out.print("</div>");
             } else {
                 out.print("<div style='background: white; padding: 20px; display: inline-block; border-radius: 10px;'>");
