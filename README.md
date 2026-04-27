@@ -4,7 +4,7 @@ index page o/p link : https://github.com/ManishPoojary014/Employee-Salary-Manage
 add eployee page o/p link : https://github.com/ManishPoojary014/Employee-Salary-Management/blob/master/addemployee.png
 
 search page o/p link : https://github.com/ManishPoojary014/Employee-Salary-Management/blob/master/search.png and 
-                       https://github.com/ManishPoojary014/Employee-Salary-Management/blob/master/search.png
+                       https://github.com/ManishPoojary014/Employee-Salary-Management/blob/master/search1.png
 
 update page o/p link : https://github.com/ManishPoojary014/Employee-Salary-Management/blob/master/update.png
 
