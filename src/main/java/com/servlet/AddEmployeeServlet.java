@@ -17,15 +17,14 @@ public class AddEmployeeServlet extends HttpServlet {
         PrintWriter out = response.getWriter();
 
         try {
-            // Getting data from the JSP form
-            int empno = Integer.parseInt(request.getParameter("empno"));
+            // empno is removed, database will handle it automatically
             String name = request.getParameter("empname");
             String doj = request.getParameter("doj");
             String gender = request.getParameter("gender");
             double salary = Double.parseDouble(request.getParameter("bsalary"));
 
-            // Creating the Employee object
-            Employee emp = new Employee(empno, name, doj, gender, salary);
+            // We pass 0 as the ID, the Database will overwrite it with the next available number
+            Employee emp = new Employee(0, name, doj, gender, salary);
 
             // Using DAO to save to MySQL
             EmployeeDAO dao = new EmployeeDAO();
