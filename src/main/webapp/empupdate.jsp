@@ -16,10 +16,12 @@
             <input type="number" name="empno" placeholder="Enter ID to Update" required>
             <input type="text" name="empname" placeholder="New Name" required>
             <input type="date" name="doj" required>
-            <label>Gender:</label> 
-            <input type="radio" name="gender" value="Male" checked> M 
-            <input type="radio" name="gender" value="Female"> F
-            <input type="number" name="bsalary" placeholder="New Salary" step="0.01" required>
+		    <label>Gender:</label>
+
+			<input type="radio" name="gender" value="Male" checked> M
+
+			<input type="radio" name="gender" value="Female"> F
+            <input type="number" name="bsalary" placeholder="New Salary" step="0.01" min="0" required>
             <input type="submit" value="Update Record">
         </form>
         <a href="index.jsp">Back to Menu</a>
