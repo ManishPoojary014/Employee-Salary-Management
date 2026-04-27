@@ -130,5 +130,20 @@ public class EmployeeDAO {
         }
         return list;
     }
+    public int getNextEmpId() throws Exception {
+        
+        Connection con = DBConnection.getConn(); 
+        
+        String sql = "SELECT MAX(Empno) FROM Employee";
+        PreparedStatement ps = con.prepareStatement(sql);
+        ResultSet rs = ps.executeQuery();
+        
+        int nextId = 1;
+        if (rs.next()) {
+           
+            nextId = rs.getInt(1) + 1;
+        }
+        return nextId;
+    }
    
 }
