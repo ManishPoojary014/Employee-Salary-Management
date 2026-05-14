@@ -30,14 +30,15 @@
             <input type="text" value="<%= nextId %>" class="readonly-field" readonly>
             
             <label>Full Name</label>
-            <input type="text" name="empname" placeholder="Enter Name" required>
+            <input type="text" name="empname" placeholder="Enter Name" pattern="[A-Za-z\s]+" title="Name must contain only alphabets" required>
             
             <label>Joining Date</label>
             <input type="date" name="doj" required>
             
             <label>Gender</label><br>
             <input type="radio" name="gender" value="Male" checked> Male 
-            <input type="radio" name="gender" value="Female"> Female <br><br>
+            <input type="radio" name="gender" value="Female"> Female
+            <input type="radio" name="gender" value="Other"> Other <br><br>
             
             <label>Basic Salary</label>
             <input type="number" name="bsalary" step="0.01" min="0" required>
