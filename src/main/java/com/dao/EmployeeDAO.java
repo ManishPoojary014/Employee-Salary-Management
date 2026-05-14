@@ -130,7 +130,7 @@ public class EmployeeDAO {
         }
         return list;
     }
-    public int getNextEmpId() throws Exception {
+public int getNextEmpId() throws Exception {
         
         Connection con = DBConnection.getConn(); 
         
@@ -145,5 +145,4 @@ public class EmployeeDAO {
         }
         return nextId;
     }
-   
 }
